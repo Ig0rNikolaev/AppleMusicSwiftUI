@@ -11,42 +11,30 @@ struct TabbarMusic: View {
 
     var body: some View {
         TabView {
-            
-            Text("Слушать")
+            TitleView()
                 .tabItem {
                     Text("Слушать")
                     Image(systemName: "play.circle.fill")
                 }
-
-            Text("Обзор")
-                .tabItem {
-                    Text("Обзор")
-                    Image(systemName: "square.grid.2x2.fill")
-                }
-
-            Text("Радио")
-                .tabItem {
-                    Text("Радио")
-                    Image(systemName: "dot.radiowaves.left.and.right")
-                }
-
-            Text("Медиатека")
-                .tabItem {
-                    Text("Медиатека")
-                    Image(systemName: "music.note.house.fill")
-                }
-
-            Text("Поиск")
-                .tabItem {
-                    Text("Поиск")
-                    Image(systemName: "magnifyingglass")
-                }
+            createTabBar(name: "Обзор", icon: "square.grid.2x2.fill")
+            createTabBar(name: "Радио", icon: "dot.radiowaves.left.and.right")
+            createTabBar(name: "Медиатека", icon: "music.note.house.fill")
+            createTabBar(name: "Поиск", icon: "magnifyingglass")
         }
         .accentColor(.red)
-        .font(.title)
+        .font(.title2)
+        .bold()
         .onAppear() {
             UITabBar.appearance().backgroundColor = .systemGray6
         }
+    }
+
+    func createTabBar(name: String, icon: String) -> some View {
+        Text(name)
+            .tabItem {
+                Text(name)
+                Image(systemName: icon)
+            }
     }
 }
 
