@@ -17,7 +17,7 @@ struct LibraryView: View {
     }
 }
 
-struct LibraryView_Previews: PreviewProvider {
+struct LibraryViewPreviews: PreviewProvider {
     static var previews: some View {
         LibraryView()
     }

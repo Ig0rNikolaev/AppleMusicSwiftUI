@@ -14,6 +14,9 @@
 		DB32968829D84D78003A0D51 /* TabbarMusic.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB32968729D84D78003A0D51 /* TabbarMusic.swift */; };
 		DB74C11429D87C7300F9C99B /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB74C11329D87C7300F9C99B /* LibraryView.swift */; };
 		DB74C11629D887B600F9C99B /* TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB74C11529D887B600F9C99B /* TitleView.swift */; };
+		DB74C11829D8969C00F9C99B /* ListСategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB74C11729D8969C00F9C99B /* ListСategories.swift */; };
+		DB74C11D29D8974D00F9C99B /* ModelCategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB74C11C29D8974D00F9C99B /* ModelCategories.swift */; };
+		DB74C11F29D8D4EE00F9C99B /* ViewModelCategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB74C11E29D8D4EE00F9C99B /* ViewModelCategories.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +28,9 @@
 		DB32968729D84D78003A0D51 /* TabbarMusic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarMusic.swift; sourceTree = "<group>"; };
 		DB74C11329D87C7300F9C99B /* LibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryView.swift; sourceTree = "<group>"; };
 		DB74C11529D887B600F9C99B /* TitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleView.swift; sourceTree = "<group>"; };
+		DB74C11729D8969C00F9C99B /* ListСategories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ListСategories.swift"; sourceTree = "<group>"; };
+		DB74C11C29D8974D00F9C99B /* ModelCategories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelCategories.swift; sourceTree = "<group>"; };
+		DB74C11E29D8D4EE00F9C99B /* ViewModelCategories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelCategories.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +80,7 @@
 		DB17557A29D4BBFC002D1841 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				DB74C11929D8971D00F9C99B /* Model */,
 				DB32968929D84D7D003A0D51 /* View */,
 				DB17556C29D4BAF4002D1841 /* AppleMusicSwiftUIApp.swift */,
 				DB17556E29D4BAF4002D1841 /* ContentView.swift */,
@@ -96,8 +103,18 @@
 				DB74C11329D87C7300F9C99B /* LibraryView.swift */,
 				DB32968729D84D78003A0D51 /* TabbarMusic.swift */,
 				DB74C11529D887B600F9C99B /* TitleView.swift */,
+				DB74C11729D8969C00F9C99B /* ListСategories.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		DB74C11929D8971D00F9C99B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DB74C11C29D8974D00F9C99B /* ModelCategories.swift */,
+				DB74C11E29D8D4EE00F9C99B /* ViewModelCategories.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,8 +190,11 @@
 				DB74C11429D87C7300F9C99B /* LibraryView.swift in Sources */,
 				DB17556F29D4BAF4002D1841 /* ContentView.swift in Sources */,
 				DB17556D29D4BAF4002D1841 /* AppleMusicSwiftUIApp.swift in Sources */,
+				DB74C11829D8969C00F9C99B /* ListСategories.swift in Sources */,
 				DB32968829D84D78003A0D51 /* TabbarMusic.swift in Sources */,
 				DB74C11629D887B600F9C99B /* TitleView.swift in Sources */,
+				DB74C11F29D8D4EE00F9C99B /* ViewModelCategories.swift in Sources */,
+				DB74C11D29D8974D00F9C99B /* ModelCategories.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
