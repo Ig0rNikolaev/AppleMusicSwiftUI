@@ -38,7 +38,7 @@ struct TabbarMusic: View {
     }
 }
 
-struct TabbarMusic_Previews: PreviewProvider {
+struct TabbarMusicPreviews: PreviewProvider {
     static var previews: some View {
         TabbarMusic()
     }

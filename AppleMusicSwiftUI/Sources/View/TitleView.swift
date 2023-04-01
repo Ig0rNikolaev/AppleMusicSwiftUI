@@ -21,7 +21,7 @@ struct TitleView: View {
         }
     }
 
-struct TitleView_Previews: PreviewProvider {
+struct TitleViewPreviews: PreviewProvider {
     static var previews: some View {
         TitleView()
     }
