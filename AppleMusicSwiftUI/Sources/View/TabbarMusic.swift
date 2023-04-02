@@ -11,7 +11,7 @@ struct TabbarMusic: View {
 
     var body: some View {
         TabView {
-            TitleView()
+            ButtonView()
                 .tabItem {
                     Text("Слушать")
                     Image(systemName: "play.circle.fill")
@@ -22,10 +22,14 @@ struct TabbarMusic: View {
             createTabBar(name: "Поиск", icon: "magnifyingglass")
         }
         .accentColor(.red)
-        .font(.title2)
-        .bold()
         .onAppear() {
             UITabBar.appearance().backgroundColor = .systemGray6
+        }
+        .safeAreaInset(edge: .bottom) {
+            Player()
+                .offset(y: -90)
+                .padding(.bottom, -90)
+
         }
     }
 
