@@ -7,8 +7,8 @@
 
 import SwiftUI
 
-struct CategoryView: View {
-    @StateObject var managerCategory: ManagerCategory
+struct MusicCategory: View {
+    @StateObject var managerCategory: MusicManagerCategory
     @State private var selection = Set<UUID>()
 
     var body: some View {
@@ -32,8 +32,8 @@ struct CategoryView: View {
     }
 }
 
-struct CategoryViewPreviews: PreviewProvider {
+struct MusicCategoryPreviews: PreviewProvider {
     static var previews: some View {
-        CategoryView(managerCategory: ManagerCategory())
+        MusicCategory(managerCategory: MusicManagerCategory())
     }
 }

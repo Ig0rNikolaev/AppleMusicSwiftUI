@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct CategoryModel: Identifiable {
+struct MusicCategoryModel: Identifiable {
     var id = UUID()
     var category: String
     var icon: String

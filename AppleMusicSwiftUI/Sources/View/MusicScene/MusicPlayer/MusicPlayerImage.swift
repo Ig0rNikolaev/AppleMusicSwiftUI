@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct PlayerImage: View {
+struct MusicPlayerImage: View {
     var body: some View {
         Image("album")
             .resizable()
@@ -20,6 +20,6 @@ struct PlayerImage: View {
 
 struct PlayerImagePreviews: PreviewProvider {
     static var previews: some View {
-        PlayerImage()
+        MusicPlayerImage()
     }
 }

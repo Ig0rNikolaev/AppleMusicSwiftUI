@@ -7,13 +7,13 @@
 
 import SwiftUI
 
-struct Player: View {
+struct MusicPlayer: View {
     var body: some View {
         ZStack(alignment: .bottom) {
             VStack {
                 HStack {
                     HStack(spacing: 10) {
-                        PlayerImage()
+                        MusicPlayerImage()
                         Text("8 Mile")
                     }
                     Spacer()
@@ -37,8 +37,8 @@ struct Player: View {
     }
 }
 
-struct PlayerPreviews: PreviewProvider {
+struct MusicPlayerPreviews: PreviewProvider {
     static var previews: some View {
-        Player()
+        MusicPlayer()
     }
 }

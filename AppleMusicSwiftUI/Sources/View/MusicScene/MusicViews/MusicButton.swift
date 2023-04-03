@@ -7,16 +7,16 @@
 
 import SwiftUI
 
-struct ButtonView: View {
+struct MusicButton: View {
     @State private var isEditing = false
     
     var body: some View {
         NavigationView {
             VStack {
                 if isEditing {
-                    CategoryView(managerCategory: ManagerCategory())
+                    MusicCategory(managerCategory: MusicManagerCategory())
                 } else {
-                    TitleView()
+                    MusicTitle()
                 }
             }
             .navigationTitle("Медиатека")
@@ -32,6 +32,6 @@ struct ButtonView: View {
 
 struct LibraryViewPreviews: PreviewProvider {
     static var previews: some View {
-        ButtonView()
+        MusicButton()
     }
 }

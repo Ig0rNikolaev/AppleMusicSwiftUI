@@ -7,12 +7,12 @@
 
 import SwiftUI
 
-struct AppleMusicContentView: View {
+struct MusicContentView: View {
 
     var body: some View {
         ZStack(alignment: .bottom) {
             TabView {
-                ButtonView()
+                MusicButton()
                     .tabItem {
                         Text("Слушать")
                         Image(systemName: "play.circle.fill")
@@ -26,7 +26,7 @@ struct AppleMusicContentView: View {
             .onAppear() {
                 UITabBar.appearance().backgroundColor = .systemGray6
             }
-            Player()
+            MusicPlayer()
                 .offset(y: -109)
                 .padding(.bottom, -90)
         }
@@ -41,8 +41,8 @@ struct AppleMusicContentView: View {
     }
 }
 
-struct AppleMusicContentViewPreviews: PreviewProvider {
+struct MusicContentViewPreviews: PreviewProvider {
     static var previews: some View {
-        AppleMusicContentView()
+        MusicContentView()
     }
 }

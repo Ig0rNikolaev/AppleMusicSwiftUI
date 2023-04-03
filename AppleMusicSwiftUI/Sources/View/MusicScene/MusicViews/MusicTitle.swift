@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct TitleView: View {
+struct MusicTitle: View {
     var body: some View {
         VStack(alignment: .center) {
             Text("Ищете свою музыку?")
@@ -21,8 +21,8 @@ struct TitleView: View {
     }
 }
 
-struct TitleViewPreviews: PreviewProvider {
+struct MusicTitlePreviews: PreviewProvider {
     static var previews: some View {
-        TitleView()
+        MusicTitle()
     }
 }
