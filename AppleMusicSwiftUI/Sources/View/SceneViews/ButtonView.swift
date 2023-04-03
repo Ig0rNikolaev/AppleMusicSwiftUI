@@ -14,7 +14,7 @@ struct ButtonView: View {
         NavigationView {
             VStack {
                 if isEditing {
-                    ListСategories()
+                    CategoryView(managerCategory: ManagerCategory())
                 } else {
                     TitleView()
                 }

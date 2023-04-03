@@ -12,15 +12,9 @@ struct Player: View {
         ZStack(alignment: .bottom) {
             VStack {
                 HStack {
-                    HStack(spacing: 20) {
-                        Image("album")
-                            .resizable()
-                            .frame(width: 45,
-                                   height: 45)
-                            .cornerRadius(5)
-                            .shadow(radius: 5)
+                    HStack(spacing: 10) {
+                        PlayerImage()
                         Text("8 Mile")
-                            .frame(width: 50)
                     }
                     Spacer()
 
@@ -32,21 +26,19 @@ struct Player: View {
                 }
                 .padding(.horizontal, 20)
                 .frame(width: UIScreen.main.bounds.width, height: 60)
-                .background(Color(.systemGray6).opacity(1.0))
+                .background(Color(.systemGray6))
             }
 
             Rectangle()
-                .fill(Color(.systemGray3))
+                .fill(Color(.systemGray2))
                 .frame(width: UIScreen.main.bounds.width, height: 0.5)
         }
         .ignoresSafeArea(edges: .all)
     }
 }
 
-
 struct PlayerPreviews: PreviewProvider {
     static var previews: some View {
         Player()
     }
 }
-
