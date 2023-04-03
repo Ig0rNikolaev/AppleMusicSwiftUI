@@ -12,7 +12,7 @@ struct AppleMusicSwiftUIApp: App {
 
     var body: some Scene {
         WindowGroup {
-            AppleMusicContentView()
+            MusicContentView()
         }
     }
 }
