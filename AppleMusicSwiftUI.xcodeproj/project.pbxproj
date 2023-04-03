@@ -16,7 +16,6 @@
 		DB74C11629D887B600F9C99B /* TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB74C11529D887B600F9C99B /* TitleView.swift */; };
 		DB74C11829D8969C00F9C99B /* ListСategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB74C11729D8969C00F9C99B /* ListСategories.swift */; };
 		DB74C11D29D8974D00F9C99B /* ModelCategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB74C11C29D8974D00F9C99B /* ModelCategories.swift */; };
-		DB74C12529D99B5F00F9C99B /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB74C12429D99B5F00F9C99B /* LibraryView.swift */; };
 		DB74C12729D9BA3900F9C99B /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB74C12629D9BA3900F9C99B /* Player.swift */; };
 /* End PBXBuildFile section */
 
@@ -31,7 +30,6 @@
 		DB74C11529D887B600F9C99B /* TitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleView.swift; sourceTree = "<group>"; };
 		DB74C11729D8969C00F9C99B /* ListСategories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ListСategories.swift"; sourceTree = "<group>"; };
 		DB74C11C29D8974D00F9C99B /* ModelCategories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelCategories.swift; sourceTree = "<group>"; };
-		DB74C12429D99B5F00F9C99B /* LibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryView.swift; sourceTree = "<group>"; };
 		DB74C12629D9BA3900F9C99B /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -106,7 +104,6 @@
 				DB74C11329D87C7300F9C99B /* ButtonView.swift */,
 				DB74C11529D887B600F9C99B /* TitleView.swift */,
 				DB74C11729D8969C00F9C99B /* ListСategories.swift */,
-				DB74C12429D99B5F00F9C99B /* LibraryView.swift */,
 				DB74C12629D9BA3900F9C99B /* Player.swift */,
 			);
 			path = View;
@@ -194,7 +191,6 @@
 				DB17556F29D4BAF4002D1841 /* ContentView.swift in Sources */,
 				DB17556D29D4BAF4002D1841 /* AppleMusicSwiftUIApp.swift in Sources */,
 				DB74C11829D8969C00F9C99B /* ListСategories.swift in Sources */,
-				DB74C12529D99B5F00F9C99B /* LibraryView.swift in Sources */,
 				DB32968829D84D78003A0D51 /* TabbarMusic.swift in Sources */,
 				DB74C11629D887B600F9C99B /* TitleView.swift in Sources */,
 				DB74C12729D9BA3900F9C99B /* Player.swift in Sources */,
