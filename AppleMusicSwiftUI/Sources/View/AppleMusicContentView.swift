@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct TabbarMusic: View {
+struct AppleMusicContentView: View {
 
     var body: some View {
         ZStack(alignment: .bottom) {
@@ -26,11 +26,11 @@ struct TabbarMusic: View {
             .onAppear() {
                 UITabBar.appearance().backgroundColor = .systemGray6
             }
-                Player()
-                    .offset(y: -109)
-                    .padding(.bottom, -90)
-            }
+            Player()
+                .offset(y: -109)
+                .padding(.bottom, -90)
         }
+    }
 
     func createTabBar(name: String, icon: String) -> some View {
         Text(name)
@@ -41,8 +41,8 @@ struct TabbarMusic: View {
     }
 }
 
-struct TabbarMusicPreviews: PreviewProvider {
+struct AppleMusicContentViewPreviews: PreviewProvider {
     static var previews: some View {
-        TabbarMusic()
+        AppleMusicContentView()
     }
 }
