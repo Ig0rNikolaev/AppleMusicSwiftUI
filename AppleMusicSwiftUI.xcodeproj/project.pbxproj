@@ -18,6 +18,8 @@
 		DB74C12729D9BA3900F9C99B /* MusicPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB74C12629D9BA3900F9C99B /* MusicPlayer.swift */; };
 		DBA6533E29DAEF03005D57F1 /* MusicPlayerImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA6533D29DAEF03005D57F1 /* MusicPlayerImage.swift */; };
 		DBA6534129DB017C005D57F1 /* MusicManagerCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA6534029DB017C005D57F1 /* MusicManagerCategory.swift */; };
+		DBC3C90C29DDA4E8007ACD36 /* RadioCategorys.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC3C90B29DDA4E8007ACD36 /* RadioCategorys.swift */; };
+		DBC3C90E29DDB0D0007ACD36 /* RadioCategoryHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC3C90D29DDB0D0007ACD36 /* RadioCategoryHeader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,8 @@
 		DB74C12629D9BA3900F9C99B /* MusicPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayer.swift; sourceTree = "<group>"; };
 		DBA6533D29DAEF03005D57F1 /* MusicPlayerImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayerImage.swift; sourceTree = "<group>"; };
 		DBA6534029DB017C005D57F1 /* MusicManagerCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicManagerCategory.swift; sourceTree = "<group>"; };
+		DBC3C90B29DDA4E8007ACD36 /* RadioCategorys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioCategorys.swift; sourceTree = "<group>"; };
+		DBC3C90D29DDB0D0007ACD36 /* RadioCategoryHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioCategoryHeader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +106,9 @@
 		DB32968929D84D7D003A0D51 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				DBA6534329DB1143005D57F1 /* MusicScene */,
+				DBC3C90A29DDA441007ACD36 /* RadioScene */,
+				DBA6534329DB1143005D57F1 /* MusicScenes */,
+				DB32968729D84D78003A0D51 /* MusicContentView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -132,14 +138,13 @@
 			path = MusicPlayer;
 			sourceTree = "<group>";
 		};
-		DBA6534329DB1143005D57F1 /* MusicScene */ = {
+		DBA6534329DB1143005D57F1 /* MusicScenes */ = {
 			isa = PBXGroup;
 			children = (
 				DBA6534729DB1C28005D57F1 /* MusicViews */,
 				DBA6534229DB0BF0005D57F1 /* MusicPlayer */,
-				DB32968729D84D78003A0D51 /* MusicContentView.swift */,
 			);
-			path = MusicScene;
+			path = MusicScenes;
 			sourceTree = "<group>";
 		};
 		DBA6534729DB1C28005D57F1 /* MusicViews */ = {
@@ -158,6 +163,23 @@
 				DB17556C29D4BAF4002D1841 /* AppleMusicSwiftUIApp.swift */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		DBC3C90A29DDA441007ACD36 /* RadioScene */ = {
+			isa = PBXGroup;
+			children = (
+				DBC3C90F29DDB73D007ACD36 /* RadioCategory */,
+			);
+			path = RadioScene;
+			sourceTree = "<group>";
+		};
+		DBC3C90F29DDB73D007ACD36 /* RadioCategory */ = {
+			isa = PBXGroup;
+			children = (
+				DBC3C90B29DDA4E8007ACD36 /* RadioCategorys.swift */,
+				DBC3C90D29DDB0D0007ACD36 /* RadioCategoryHeader.swift */,
+			);
+			path = RadioCategory;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,6 +259,8 @@
 				DBA6533E29DAEF03005D57F1 /* MusicPlayerImage.swift in Sources */,
 				DB74C11629D887B600F9C99B /* MusicTitle.swift in Sources */,
 				DBA6534129DB017C005D57F1 /* MusicManagerCategory.swift in Sources */,
+				DBC3C90C29DDA4E8007ACD36 /* RadioCategorys.swift in Sources */,
+				DBC3C90E29DDB0D0007ACD36 /* RadioCategoryHeader.swift in Sources */,
 				DB74C12729D9BA3900F9C99B /* MusicPlayer.swift in Sources */,
 				DB74C11D29D8974D00F9C99B /* MusicCategoryModel.swift in Sources */,
 			);

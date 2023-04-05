@@ -12,11 +12,7 @@ struct MusicContentView: View {
     var body: some View {
         ZStack(alignment: .bottom) {
             TabView {
-                MusicButton()
-                    .tabItem {
-                        Text("Слушать")
-                        Image(systemName: "play.circle.fill")
-                    }
+                createTabWay(modul: MusicButton(), name: "Слушать", icon: "play.circle.fill")
                 createTabBar(name: "Обзор", icon: "square.grid.2x2.fill")
                 createTabBar(name: "Радио", icon: "dot.radiowaves.left.and.right")
                 createTabBar(name: "Медиатека", icon: "music.note.house.fill")
@@ -39,6 +35,15 @@ struct MusicContentView: View {
                 Image(systemName: icon)
             }
     }
+
+    func createTabWay<T: View>(modul: T, name: String, icon: String) -> some View {
+        modul
+            .tabItem {
+                Text(name)
+                Image(systemName: icon)
+            }
+    }
+
 }
 
 struct MusicContentViewPreviews: PreviewProvider {

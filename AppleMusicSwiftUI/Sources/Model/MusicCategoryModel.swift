@@ -11,6 +11,7 @@ struct MusicCategoryModel: Identifiable {
     var id = UUID()
     var category: String
     var icon: String
+    
     init(category: String, icon: String, id: UUID) {
         self.category = category
         self.icon = icon

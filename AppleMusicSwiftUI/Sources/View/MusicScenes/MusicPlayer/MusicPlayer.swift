@@ -19,10 +19,15 @@ struct MusicPlayer: View {
                     Spacer()
 
                     HStack(spacing: 20) {
-                        Image(systemName: "play.fill")
-                        Image(systemName: "forward.fill")
+                        Button(action: {}) {
+                            Image(systemName: "play.fill")
+                        }
+                        Button(action: {}) {
+                            Image(systemName: "forward.fill")
+                        }
                     }
                     .font(.title2)
+                    .foregroundColor(.black)
                 }
                 .padding(.horizontal, 20)
                 .frame(width: UIScreen.main.bounds.width, height: 60)
