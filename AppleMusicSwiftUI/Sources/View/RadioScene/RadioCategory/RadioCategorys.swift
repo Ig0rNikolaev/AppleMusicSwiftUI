@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct RadioCategorys: View {
-    let arrayGridItems = [GridItem(.fixed(300))]
+    let rows = [GridItem(.fixed(300))]
 
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
-            LazyHGrid(rows: arrayGridItems, spacing: 10) {
+            LazyHGrid(rows: rows, spacing: 10) {
                 ForEach(0..<10) { index in
                     VStack(alignment: .leading) {
                         RadioCategoryHeader()
@@ -25,10 +25,7 @@ struct RadioCategorys: View {
                                     .foregroundColor(.white)
                                     .padding(10)
                                     .font(.title2)
-                                    .bold()
-                                    .alignmentGuide(.top) { text in
-                                        text[.top]
-                                    },
+                                    .bold(),
                                 alignment: .topLeading
                             )
                             .overlay(
@@ -38,10 +35,7 @@ struct RadioCategorys: View {
                                     .font(.system(size: 150))
                                     .bold()
                                     .lineLimit(1)
-                                    .fixedSize()
-                                    .alignmentGuide(.top) { text in
-                                        text[.top]
-                                    },
+                                    .fixedSize(),
                                 alignment: .bottomLeading
                             )
                     }

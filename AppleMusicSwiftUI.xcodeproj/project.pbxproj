@@ -20,6 +20,10 @@
 		DBA6534129DB017C005D57F1 /* MusicManagerCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA6534029DB017C005D57F1 /* MusicManagerCategory.swift */; };
 		DBC3C90C29DDA4E8007ACD36 /* RadioCategorys.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC3C90B29DDA4E8007ACD36 /* RadioCategorys.swift */; };
 		DBC3C90E29DDB0D0007ACD36 /* RadioCategoryHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC3C90D29DDB0D0007ACD36 /* RadioCategoryHeader.swift */; };
+		DBC3C91229DDC5B0007ACD36 /* RadioStations.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC3C91129DDC5B0007ACD36 /* RadioStations.swift */; };
+		DBC3C91429DDE4A1007ACD36 /* RadioImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC3C91329DDE4A1007ACD36 /* RadioImage.swift */; };
+		DBC3C91629DDE4E9007ACD36 /* RadioStationDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC3C91529DDE4E9007ACD36 /* RadioStationDescription.swift */; };
+		DBC3C91829DDE52E007ACD36 /* RadioStationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC3C91729DDE52E007ACD36 /* RadioStationCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +41,10 @@
 		DBA6534029DB017C005D57F1 /* MusicManagerCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicManagerCategory.swift; sourceTree = "<group>"; };
 		DBC3C90B29DDA4E8007ACD36 /* RadioCategorys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioCategorys.swift; sourceTree = "<group>"; };
 		DBC3C90D29DDB0D0007ACD36 /* RadioCategoryHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioCategoryHeader.swift; sourceTree = "<group>"; };
+		DBC3C91129DDC5B0007ACD36 /* RadioStations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioStations.swift; sourceTree = "<group>"; };
+		DBC3C91329DDE4A1007ACD36 /* RadioImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioImage.swift; sourceTree = "<group>"; };
+		DBC3C91529DDE4E9007ACD36 /* RadioStationDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioStationDescription.swift; sourceTree = "<group>"; };
+		DBC3C91729DDE52E007ACD36 /* RadioStationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioStationCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +176,7 @@
 		DBC3C90A29DDA441007ACD36 /* RadioScene */ = {
 			isa = PBXGroup;
 			children = (
+				DBC3C91029DDC58B007ACD36 /* RadioStation */,
 				DBC3C90F29DDB73D007ACD36 /* RadioCategory */,
 			);
 			path = RadioScene;
@@ -180,6 +189,17 @@
 				DBC3C90D29DDB0D0007ACD36 /* RadioCategoryHeader.swift */,
 			);
 			path = RadioCategory;
+			sourceTree = "<group>";
+		};
+		DBC3C91029DDC58B007ACD36 /* RadioStation */ = {
+			isa = PBXGroup;
+			children = (
+				DBC3C91129DDC5B0007ACD36 /* RadioStations.swift */,
+				DBC3C91329DDE4A1007ACD36 /* RadioImage.swift */,
+				DBC3C91529DDE4E9007ACD36 /* RadioStationDescription.swift */,
+				DBC3C91729DDE52E007ACD36 /* RadioStationCell.swift */,
+			);
+			path = RadioStation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,13 +274,17 @@
 			files = (
 				DB74C11429D87C7300F9C99B /* MusicButton.swift in Sources */,
 				DB17556F29D4BAF4002D1841 /* MusicCategory.swift in Sources */,
+				DBC3C91229DDC5B0007ACD36 /* RadioStations.swift in Sources */,
 				DB17556D29D4BAF4002D1841 /* AppleMusicSwiftUIApp.swift in Sources */,
 				DB32968829D84D78003A0D51 /* MusicContentView.swift in Sources */,
 				DBA6533E29DAEF03005D57F1 /* MusicPlayerImage.swift in Sources */,
 				DB74C11629D887B600F9C99B /* MusicTitle.swift in Sources */,
 				DBA6534129DB017C005D57F1 /* MusicManagerCategory.swift in Sources */,
 				DBC3C90C29DDA4E8007ACD36 /* RadioCategorys.swift in Sources */,
+				DBC3C91629DDE4E9007ACD36 /* RadioStationDescription.swift in Sources */,
+				DBC3C91429DDE4A1007ACD36 /* RadioImage.swift in Sources */,
 				DBC3C90E29DDB0D0007ACD36 /* RadioCategoryHeader.swift in Sources */,
+				DBC3C91829DDE52E007ACD36 /* RadioStationCell.swift in Sources */,
 				DB74C12729D9BA3900F9C99B /* MusicPlayer.swift in Sources */,
 				DB74C11D29D8974D00F9C99B /* MusicCategoryModel.swift in Sources */,
 			);
