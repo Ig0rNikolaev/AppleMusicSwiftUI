@@ -10,13 +10,12 @@ import SwiftUI
 struct RadioImage: View {
     let image: RadioModelStation
     var body: some View {
-        Image(systemName: image.icon)
+        Image(image.icon)
             .resizable()
             .frame(width: 115,
                    height: 115)
             .cornerRadius(5)
             .shadow(radius: 5)
-            .background(Color.blue)
     }
 }
 

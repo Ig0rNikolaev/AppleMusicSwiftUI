@@ -8,33 +8,22 @@
 import SwiftUI
 
 class RadioManager: ObservableObject {
-    @Published var model: [RadioModels] = [RadioModels(modelStation: [RadioModelStation(category: "Поп", description: "Описание", icon: "square.and.arrow.up.fill"),
-                                                                      RadioModelStation(category: "Рок", description: "Описание", icon: "person"),
-                                                                      RadioModelStation(category: "Рэп", description: "Описание", icon: "person"),
-                                                                      RadioModelStation(category: "Хип-Хоп", description: "Описание", icon: "square.and.arrow.up.fill"),
-                                                                      RadioModelStation(category: "Джаз", description: "Описание", icon: "person"),
-                                                                      RadioModelStation(category: "Фанк", description: "Описание", icon: "person"),
-                                                                      RadioModelStation(category: "Соул", description: "Описание", icon: "person")
-                                                                     ],
-                                                       modelCategory: [RadioModelCategory(category: "Поп", color: .pink),
-                                                                       RadioModelCategory(category: "Рок", color: .orange),
-                                                                       RadioModelCategory(category: "Рэп", color: .red),
-                                                                       RadioModelCategory(category: "Классика", color: .blue),
-                                                                       RadioModelCategory(category: "Хиты", color: .indigo),
-                                                                       RadioModelCategory(category: "Хип-Хоп", color: .green),
-                                                                       RadioModelCategory(category: "Джаз", color: .yellow)
-                                                                      ]
-                                                      )]
-
-}
-                                                                                        
-
-
-
-
-
-
-
-
-
-
+    @Published var model: [RadioModels] = [
+        RadioModels(
+            modelStation: [RadioModelStation(category: "Хип-хоп и R&B", description: "Идеальные биты и рифмы", icon: "hip-hop"),
+                           RadioModelStation(category: "Рок", description: "Гении гитарного звука", icon: "rock"),
+                           RadioModelStation(category: "Ретро", description: "Ретро настроение", icon: "retro"),
+                           RadioModelStation(category: "Поп", description: "Поп хиты", icon: "pop"),
+                           RadioModelStation(category: "Хаус", description: "Электронная медитация", icon: "house"),
+                           RadioModelStation(category: "Классика", description: "Выдающиеся образцы жанра", icon: "classic"),
+                           RadioModelStation(category: "Джаз", description: "Лучшее из мира джаза", icon: "jazz")
+                          ],
+            modelCategory: [RadioModelCategory(category: "Поп-музыка", color: .pink),
+                            RadioModelCategory(category: "Чилаут", color: .orange),
+                            RadioModelCategory(category: "Хип-хоп", color: .red),
+                            RadioModelCategory(category: "Классика рока", color: .blue),
+                            RadioModelCategory(category: "Ретро", color: .indigo),
+                            RadioModelCategory(category: "Альтернатива", color: .green),
+                            RadioModelCategory(category: "Хаус", color: .yellow)
+                           ])
+    ]}

@@ -13,7 +13,7 @@ struct RadioStationDescription: View {
         
         VStack(alignment: .leading) {
             Text(description.category)
-                .font(.title2)
+                .font(.title3)
 
             Text(description.description)
                 .font(.subheadline)
