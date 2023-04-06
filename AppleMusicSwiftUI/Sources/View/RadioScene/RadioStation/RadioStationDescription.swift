@@ -8,11 +8,14 @@
 import SwiftUI
 
 struct RadioStationDescription: View {
+    let description: RadioModelStation
     var body: some View {
+        
         VStack(alignment: .leading) {
-            Text("Популярное")
+            Text(description.category)
                 .font(.title2)
-            Text("То, что слушают прямо сейчас.")
+
+            Text(description.description)
                 .font(.subheadline)
                 .foregroundColor(.secondary)
         }
@@ -21,6 +24,6 @@ struct RadioStationDescription: View {
 
 struct RadioStationDescriptionPreviews: PreviewProvider {
     static var previews: some View {
-        RadioStationDescription()
+        RadioStationDescription(description: RadioModelStation())
     }
 }

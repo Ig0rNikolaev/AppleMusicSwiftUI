@@ -12,9 +12,8 @@ struct MusicCategoryModel: Identifiable {
     var category: String
     var icon: String
     
-    init(category: String, icon: String, id: UUID) {
+    init(category: String, icon: String) {
         self.category = category
         self.icon = icon
-        self.id = id
     }
 }

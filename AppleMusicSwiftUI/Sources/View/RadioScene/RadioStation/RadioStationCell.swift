@@ -8,22 +8,27 @@
 import SwiftUI
 
 struct RadioStationCell: View {
+    let cell: RadioModelStation
+
     var body: some View {
-        VStack(alignment: .trailing) {
-            HStack(alignment: .center, spacing: 20) {
-                RadioImage()
-                RadioStationDescription()
+        VStack(alignment: .leading, spacing: 10) {
+            HStack(spacing: 20)  {
+                RadioImage(image: cell)
+                RadioStationDescription(description: cell)
             }
-            Rectangle()
-                .fill(Color(.systemGray2))
-                .frame(width: 230, height: 0.5)
+            HStack {
+                Spacer()
+                Rectangle()
+                    .fill(Color(.systemGray2))
+                    .frame(width: 225, height: 0.5)
+                    .padding(.bottom)
+            }
         }
-        .ignoresSafeArea(edges: .all)
     }
 }
 
 struct RadioStationCellPreviews: PreviewProvider {
     static var previews: some View {
-        RadioStationCell()
+        RadioStationCell(cell: RadioModelStation())
     }
 }

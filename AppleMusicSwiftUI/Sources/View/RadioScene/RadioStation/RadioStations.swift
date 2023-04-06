@@ -9,21 +9,28 @@ import SwiftUI
 
 struct RadioStations: View {
     let columns = [GridItem(.fixed(350))]
+    @State var radioManager: RadioManager
 
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
-            LazyVGrid(columns: columns, spacing: 20) {
-                ForEach(0..<11) { index in
-                    RadioStationCell()
-                        .frame(width: 400)
+            LazyVGrid(columns: columns, alignment: .leading, spacing: 10, pinnedViews: [], content: {
+                Section(header: Text("RadioType")
+                    .font(Font.title2)
+                    .bold()
+                    .frame(alignment: .leading)
+                ) {
+                    ForEach(radioManager.model.flatMap { $0.modelStation }) { station in
+                        RadioStationCell(cell: station)
+                    }
                 }
-            }
+            })
+            .padding(20)
         }
     }
 }
 
 struct RadioStationsPreviews: PreviewProvider {
     static var previews: some View {
-        RadioStations()
+        RadioStations(radioManager: RadioManager())
     }
 }

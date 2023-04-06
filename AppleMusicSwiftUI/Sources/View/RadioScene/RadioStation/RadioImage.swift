@@ -8,8 +8,9 @@
 import SwiftUI
 
 struct RadioImage: View {
+    let image: RadioModelStation
     var body: some View {
-        Image(systemName: "person")
+        Image(systemName: image.icon)
             .resizable()
             .frame(width: 115,
                    height: 115)
@@ -21,6 +22,6 @@ struct RadioImage: View {
 
 struct RadioImagePreviews: PreviewProvider {
     static var previews: some View {
-        RadioImage()
+        RadioImage(image: RadioModelStation())
     }
 }

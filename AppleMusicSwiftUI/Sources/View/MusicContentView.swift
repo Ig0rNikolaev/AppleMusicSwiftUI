@@ -14,7 +14,7 @@ struct MusicContentView: View {
             TabView {
                 createTabWay(modul: MusicButton(), name: "Слушать", icon: "play.circle.fill")
                 createTabBar(name: "Обзор", icon: "square.grid.2x2.fill")
-                createTabBar(name: "Радио", icon: "dot.radiowaves.left.and.right")
+                createTabWay(modul: RadioContetnt(), name: "Радио", icon: "dot.radiowaves.left.and.right")
                 createTabBar(name: "Медиатека", icon: "music.note.house.fill")
                 createTabBar(name: "Поиск", icon: "magnifyingglass")
             }
@@ -43,7 +43,6 @@ struct MusicContentView: View {
                 Image(systemName: icon)
             }
     }
-
 }
 
 struct MusicContentViewPreviews: PreviewProvider {
