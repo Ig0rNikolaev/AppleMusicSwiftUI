@@ -9,6 +9,7 @@ import SwiftUI
 
 struct RadioImage: View {
     let image: RadioModelStation
+    
     var body: some View {
         Image(image.icon)
             .resizable()

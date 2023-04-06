@@ -9,6 +9,7 @@ import SwiftUI
 
 struct RadioCategoryCell: View {
     let cell: RadioModelCategory
+    
     var body: some View {
         VStack(alignment: .leading) {
             Rectangle()

@@ -9,8 +9,8 @@ import SwiftUI
 
 struct RadioStationDescription: View {
     let description: RadioModelStation
+
     var body: some View {
-        
         VStack(alignment: .leading) {
             Text(description.category)
                 .font(.title3)

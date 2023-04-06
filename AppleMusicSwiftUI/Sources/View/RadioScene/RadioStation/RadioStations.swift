@@ -10,7 +10,7 @@ import SwiftUI
 struct RadioStations: View {
     let columns = [GridItem(.fixed(350))]
     @State var radioManager: RadioManager
-
+    
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
             LazyVGrid(columns: columns, alignment: .leading, spacing: 10, pinnedViews: [], content: {
