@@ -14,7 +14,7 @@ struct RadioStations: View {
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
             LazyVGrid(columns: columns, alignment: .leading, spacing: 10, pinnedViews: [], content: {
-                Section(header: Text("RadioType")
+                Section(header: Text("Станции")
                     .font(Font.title2)
                     .bold()
                     .frame(alignment: .leading)

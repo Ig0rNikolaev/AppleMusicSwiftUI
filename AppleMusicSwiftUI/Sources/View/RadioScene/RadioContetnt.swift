@@ -17,6 +17,7 @@ struct RadioContetnt: View {
                 }
             }
             .navigationTitle("Радио")
+            .padding(.bottom, 30)
         }
     }
 }
