@@ -9,6 +9,7 @@ import SwiftUI
 
 struct RadioCategoryHeader: View {
     let header: RadioModelCategory
+    
     var body: some View {
         VStack(alignment: .leading) {
             Text("ИЗБРАННАЯ РАДИОСТАНЦИЯ")

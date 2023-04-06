@@ -14,10 +14,10 @@ struct RadioModelStation: Identifiable {
     var icon: String
 
     init() {
-           self.category = ""
-           self.icon = ""
-           self.description = ""
-       }
+        self.category = ""
+        self.icon = ""
+        self.description = ""
+    }
 
     init(category: String, description: String, icon: String) {
         self.category = category
@@ -46,4 +46,3 @@ struct RadioModels {
     var modelStation: [RadioModelStation]
     var modelCategory: [RadioModelCategory]
 }
-

@@ -13,10 +13,10 @@ struct MusicContentView: View {
         ZStack(alignment: .bottom) {
             TabView {
                 createTabWay(modul: MusicButton(), name: "Слушать", icon: "play.circle.fill")
-                createTabBar(name: "Обзор", icon: "square.grid.2x2.fill")
+                createTabWay(modul: Text("Обзор"), name: "Обзор", icon: "square.grid.2x2.fill")
                 createTabWay(modul: RadioContetnt(), name: "Радио", icon: "dot.radiowaves.left.and.right")
-                createTabBar(name: "Медиатека", icon: "music.note.house.fill")
-                createTabBar(name: "Поиск", icon: "magnifyingglass")
+                createTabWay(modul: Text("Медиатека"), name: "Медиатека", icon: "music.note.house.fill")
+                createTabWay(modul: Text("Поиск"), name: "Поиск", icon: "magnifyingglass")
             }
             .accentColor(.red)
             .onAppear() {
@@ -26,14 +26,6 @@ struct MusicContentView: View {
                 .offset(y: -109)
                 .padding(.bottom, -90)
         }
-    }
-
-    func createTabBar(name: String, icon: String) -> some View {
-        Text(name)
-            .tabItem {
-                Text(name)
-                Image(systemName: icon)
-            }
     }
 
     func createTabWay<T: View>(modul: T, name: String, icon: String) -> some View {

@@ -9,7 +9,7 @@ import SwiftUI
 
 struct RadioStationCell: View {
     let cell: RadioModelStation
-
+    
     var body: some View {
         VStack(alignment: .leading, spacing: 10) {
             HStack(spacing: 20)  {

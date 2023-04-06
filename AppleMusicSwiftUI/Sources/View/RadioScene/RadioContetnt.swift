@@ -24,6 +24,6 @@ struct RadioContetnt: View {
 
 struct RadioContetnt_Previews: PreviewProvider {
     static var previews: some View {
-            RadioContetnt()
-        }
+        RadioContetnt()
     }
+}

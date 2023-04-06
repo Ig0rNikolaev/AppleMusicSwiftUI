@@ -31,4 +31,3 @@ struct RadioCategorysPreviews: PreviewProvider {
         RadioCategorys(radioManager: RadioManager())
     }
 }
-
