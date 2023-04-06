@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct RadioCategoryHeader: View {
+    let header: RadioModelCategory
     var body: some View {
         VStack(alignment: .leading) {
             Text("ИЗБРАННАЯ РАДИОСТАНЦИЯ")
@@ -15,7 +16,7 @@ struct RadioCategoryHeader: View {
                 .foregroundColor(.secondary)
                 .bold()
             
-            Text("Легкий поп")
+            Text(header.category)
                 .font(.title2)
 
             Text("Станция Apple Music")
@@ -27,6 +28,6 @@ struct RadioCategoryHeader: View {
 
 struct RadioCategoryHeaderPreviews: PreviewProvider {
     static var previews: some View {
-        RadioCategoryHeader()
+        RadioCategoryHeader(header: RadioModelCategory())
     }
 }
