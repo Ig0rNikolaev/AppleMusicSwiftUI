@@ -14,7 +14,7 @@ struct RadioCategorys: View {
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
             LazyHGrid(rows: rows, spacing: 10) {
-                ForEach(radioManager.model.flatMap { $0.modelCategory }) { station in
+                ForEach(radioManager.modelCategory) { station in
                     VStack(alignment: .leading) {
                         RadioCategoryHeader(header: station)
                         RadioCategoryCell(cell: station)

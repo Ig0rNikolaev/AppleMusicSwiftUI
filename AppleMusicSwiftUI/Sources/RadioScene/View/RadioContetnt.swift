@@ -8,12 +8,14 @@
 import SwiftUI
 
 struct RadioContetnt: View {
+    private let radioManager = RadioManager()
+
     var body: some View {
         NavigationView {
             ScrollView {
                 VStack(alignment: .leading) {
-                    RadioCategorys(radioManager: RadioManager())
-                    RadioStations(radioManager: RadioManager())
+                    RadioCategorys(radioManager: radioManager)
+                    RadioStations(radioManager: radioManager)
                 }
             }
             .navigationTitle("Радио")
