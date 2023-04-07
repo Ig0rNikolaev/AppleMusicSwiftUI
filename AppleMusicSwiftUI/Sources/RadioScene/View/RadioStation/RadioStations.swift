@@ -19,7 +19,7 @@ struct RadioStations: View {
                     .bold()
                     .frame(alignment: .leading)
                 ) {
-                    ForEach(radioManager.model.flatMap { $0.modelStation }) { station in
+                    ForEach(radioManager.modelStation) { station in
                         RadioStationCell(cell: station)
                     }
                 }

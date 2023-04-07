@@ -41,8 +41,3 @@ struct RadioModelCategory: Identifiable {
         self.color = color
     }
 }
-
-struct RadioModels {
-    var modelStation: [RadioModelStation]
-    var modelCategory: [RadioModelCategory]
-}
