@@ -11,6 +11,7 @@
 		DB17556F29D4BAF4002D1841 /* MusicCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB17556E29D4BAF4002D1841 /* MusicCategory.swift */; };
 		DB17557129D4BAF5002D1841 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB17557029D4BAF5002D1841 /* Assets.xcassets */; };
 		DB17557429D4BAF5002D1841 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB17557329D4BAF5002D1841 /* Preview Assets.xcassets */; };
+		DB2C291B29E2FBF000B70B58 /* song.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DB2C291A29E2FBF000B70B58 /* song.mp3 */; };
 		DB32968829D84D78003A0D51 /* MusicContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB32968729D84D78003A0D51 /* MusicContentView.swift */; };
 		DB74C11429D87C7300F9C99B /* MusicButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB74C11329D87C7300F9C99B /* MusicButton.swift */; };
 		DB74C11629D887B600F9C99B /* MusicTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB74C11529D887B600F9C99B /* MusicTitle.swift */; };
@@ -36,6 +37,7 @@
 		DB17556E29D4BAF4002D1841 /* MusicCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicCategory.swift; sourceTree = "<group>"; };
 		DB17557029D4BAF5002D1841 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB17557329D4BAF5002D1841 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DB2C291A29E2FBF000B70B58 /* song.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = song.mp3; sourceTree = "<group>"; };
 		DB32968729D84D78003A0D51 /* MusicContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicContentView.swift; sourceTree = "<group>"; };
 		DB74C11329D87C7300F9C99B /* MusicButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicButton.swift; sourceTree = "<group>"; };
 		DB74C11529D887B600F9C99B /* MusicTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicTitle.swift; sourceTree = "<group>"; };
@@ -192,6 +194,7 @@
 		DBA6534229DB0BF0005D57F1 /* MusicPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				DB2C291A29E2FBF000B70B58 /* song.mp3 */,
 				DB74C12629D9BA3900F9C99B /* MusicPlayer.swift */,
 				DBA6533D29DAEF03005D57F1 /* MusicPlayerImage.swift */,
 			);
@@ -298,6 +301,7 @@
 			files = (
 				DB17557429D4BAF5002D1841 /* Preview Assets.xcassets in Resources */,
 				DB17557129D4BAF5002D1841 /* Assets.xcassets in Resources */,
+				DB2C291B29E2FBF000B70B58 /* song.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
