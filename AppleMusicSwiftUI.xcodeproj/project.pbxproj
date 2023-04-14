@@ -17,8 +17,15 @@
 		DB74C11629D887B600F9C99B /* MusicTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB74C11529D887B600F9C99B /* MusicTitle.swift */; };
 		DB74C11D29D8974D00F9C99B /* MusicCategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB74C11C29D8974D00F9C99B /* MusicCategoryModel.swift */; };
 		DB74C12729D9BA3900F9C99B /* MusicPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB74C12629D9BA3900F9C99B /* MusicPlayer.swift */; };
+		DB7CB4E929E9D2D10008FCF5 /* SearchNetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7CB4E829E9D2D10008FCF5 /* SearchNetworkError.swift */; };
+		DB7CB4EC29E9F0710008FCF5 /* SearchNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7CB4EB29E9F0710008FCF5 /* SearchNetworkManager.swift */; };
 		DBA6533E29DAEF03005D57F1 /* MusicPlayerImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA6533D29DAEF03005D57F1 /* MusicPlayerImage.swift */; };
 		DBA6534129DB017C005D57F1 /* MusicManagerCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA6534029DB017C005D57F1 /* MusicManagerCategory.swift */; };
+		DBA9F43F29E95B9D0038C2B5 /* SearchAlbumModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA9F43E29E95B9D0038C2B5 /* SearchAlbumModel.swift */; };
+		DBA9F44229E95C540038C2B5 /* SearchAlbum.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA9F44129E95C540038C2B5 /* SearchAlbum.swift */; };
+		DBA9F44429E961330038C2B5 /* SearchSongModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA9F44329E961330038C2B5 /* SearchSongModel.swift */; };
+		DBA9F44629E961460038C2B5 /* SearchArtistModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA9F44529E961460038C2B5 /* SearchArtistModel.swift */; };
+		DBA9F44829E9739F0038C2B5 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA9F44729E9739F0038C2B5 /* SearchView.swift */; };
 		DBC3C90C29DDA4E8007ACD36 /* RadioCategorys.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC3C90B29DDA4E8007ACD36 /* RadioCategorys.swift */; };
 		DBC3C90E29DDB0D0007ACD36 /* RadioCategoryHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC3C90D29DDB0D0007ACD36 /* RadioCategoryHeader.swift */; };
 		DBC3C91229DDC5B0007ACD36 /* RadioStations.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC3C91129DDC5B0007ACD36 /* RadioStations.swift */; };
@@ -43,8 +50,15 @@
 		DB74C11529D887B600F9C99B /* MusicTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicTitle.swift; sourceTree = "<group>"; };
 		DB74C11C29D8974D00F9C99B /* MusicCategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicCategoryModel.swift; sourceTree = "<group>"; };
 		DB74C12629D9BA3900F9C99B /* MusicPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayer.swift; sourceTree = "<group>"; };
+		DB7CB4E829E9D2D10008FCF5 /* SearchNetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchNetworkError.swift; sourceTree = "<group>"; };
+		DB7CB4EB29E9F0710008FCF5 /* SearchNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchNetworkManager.swift; sourceTree = "<group>"; };
 		DBA6533D29DAEF03005D57F1 /* MusicPlayerImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayerImage.swift; sourceTree = "<group>"; };
 		DBA6534029DB017C005D57F1 /* MusicManagerCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicManagerCategory.swift; sourceTree = "<group>"; };
+		DBA9F43E29E95B9D0038C2B5 /* SearchAlbumModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAlbumModel.swift; sourceTree = "<group>"; };
+		DBA9F44129E95C540038C2B5 /* SearchAlbum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAlbum.swift; sourceTree = "<group>"; };
+		DBA9F44329E961330038C2B5 /* SearchSongModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchSongModel.swift; sourceTree = "<group>"; };
+		DBA9F44529E961460038C2B5 /* SearchArtistModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchArtistModel.swift; sourceTree = "<group>"; };
+		DBA9F44729E9739F0038C2B5 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		DBC3C90B29DDA4E8007ACD36 /* RadioCategorys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioCategorys.swift; sourceTree = "<group>"; };
 		DBC3C90D29DDB0D0007ACD36 /* RadioCategoryHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioCategoryHeader.swift; sourceTree = "<group>"; };
 		DBC3C91129DDC5B0007ACD36 /* RadioStations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioStations.swift; sourceTree = "<group>"; };
@@ -105,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				DBA6534829DB1C5A005D57F1 /* App */,
+				DBA9F43A29E955960038C2B5 /* SearchScene */,
 				DB4FB5FB29E0B9C3003CE981 /* MusicScene */,
 				DB4FB5FA29E0B9B7003CE981 /* RadioScene */,
 			);
@@ -220,6 +235,44 @@
 			path = App;
 			sourceTree = "<group>";
 		};
+		DBA9F43A29E955960038C2B5 /* SearchScene */ = {
+			isa = PBXGroup;
+			children = (
+				DBA9F43D29E955CB0038C2B5 /* Model */,
+				DBA9F43C29E955BF0038C2B5 /* View */,
+				DBA9F43B29E955B30038C2B5 /* ViewModel */,
+			);
+			path = SearchScene;
+			sourceTree = "<group>";
+		};
+		DBA9F43B29E955B30038C2B5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DBA9F44129E95C540038C2B5 /* SearchAlbum.swift */,
+				DB7CB4EB29E9F0710008FCF5 /* SearchNetworkManager.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DBA9F43C29E955BF0038C2B5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DBA9F44729E9739F0038C2B5 /* SearchView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DBA9F43D29E955CB0038C2B5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DBA9F43E29E95B9D0038C2B5 /* SearchAlbumModel.swift */,
+				DBA9F44329E961330038C2B5 /* SearchSongModel.swift */,
+				DBA9F44529E961460038C2B5 /* SearchArtistModel.swift */,
+				DB7CB4E829E9D2D10008FCF5 /* SearchNetworkError.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		DBC3C90F29DDB73D007ACD36 /* RadioCategory */ = {
 			isa = PBXGroup;
 			children = (
@@ -313,7 +366,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB74C11429D87C7300F9C99B /* MusicButton.swift in Sources */,
+				DBA9F43F29E95B9D0038C2B5 /* SearchAlbumModel.swift in Sources */,
+				DBA9F44429E961330038C2B5 /* SearchSongModel.swift in Sources */,
 				DB17556F29D4BAF4002D1841 /* MusicCategory.swift in Sources */,
+				DBA9F44829E9739F0038C2B5 /* SearchView.swift in Sources */,
 				DBC3C91229DDC5B0007ACD36 /* RadioStations.swift in Sources */,
 				DBC3C91E29DF023B007ACD36 /* RadioCategoryCell.swift in Sources */,
 				DBC3C92029DF0BD8007ACD36 /* RadioContetnt.swift in Sources */,
@@ -321,15 +377,19 @@
 				DB32968829D84D78003A0D51 /* MusicContentView.swift in Sources */,
 				DBA6533E29DAEF03005D57F1 /* MusicPlayerImage.swift in Sources */,
 				DB74C11629D887B600F9C99B /* MusicTitle.swift in Sources */,
+				DB7CB4EC29E9F0710008FCF5 /* SearchNetworkManager.swift in Sources */,
 				DBC3C91C29DEE528007ACD36 /* RadioManager.swift in Sources */,
 				DBA6534129DB017C005D57F1 /* MusicManagerCategory.swift in Sources */,
 				DBC3C90C29DDA4E8007ACD36 /* RadioCategorys.swift in Sources */,
+				DBA9F44629E961460038C2B5 /* SearchArtistModel.swift in Sources */,
 				DBC3C91629DDE4E9007ACD36 /* RadioStationDescription.swift in Sources */,
 				DBC3C91429DDE4A1007ACD36 /* RadioImage.swift in Sources */,
 				DBC3C91A29DEE2BC007ACD36 /* RadioModel.swift in Sources */,
 				DBC3C90E29DDB0D0007ACD36 /* RadioCategoryHeader.swift in Sources */,
+				DB7CB4E929E9D2D10008FCF5 /* SearchNetworkError.swift in Sources */,
 				DBC3C91829DDE52E007ACD36 /* RadioStationCell.swift in Sources */,
 				DB74C12729D9BA3900F9C99B /* MusicPlayer.swift in Sources */,
+				DBA9F44229E95C540038C2B5 /* SearchAlbum.swift in Sources */,
 				DB74C11D29D8974D00F9C99B /* MusicCategoryModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
