@@ -16,7 +16,7 @@ struct MusicContentView: View {
                 createTabWay(modul: Text("Обзор"), name: "Обзор", icon: "square.grid.2x2.fill")
                 createTabWay(modul: RadioContetnt(), name: "Радио", icon: "dot.radiowaves.left.and.right")
                 createTabWay(modul: Text("Медиатека"), name: "Медиатека", icon: "music.note.house.fill")
-                createTabWay(modul: Text("Поиск"), name: "Поиск", icon: "magnifyingglass")
+                createTabWay(modul: SearchView(), name: "Поиск", icon: "magnifyingglass")
             }
             .accentColor(.red)
             .onAppear() {
