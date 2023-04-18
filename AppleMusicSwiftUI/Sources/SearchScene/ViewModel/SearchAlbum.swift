@@ -11,12 +11,13 @@ import Combine
 class SearchAlbum: ObservableObject {
     @Published var search: String = ""
     @Published var albums = [Album]()
-    var subscription = Set<AnyCancellable>()
     let networkManager = SearchNetworkManager()
+    var subscription = Set<AnyCancellable>()
 
     init() {
         $search
             .dropFirst()
+            .removeDuplicates()
             .sink { [weak self] term in
                 self?.albums = []
                 self?.searchAlbum(term)
