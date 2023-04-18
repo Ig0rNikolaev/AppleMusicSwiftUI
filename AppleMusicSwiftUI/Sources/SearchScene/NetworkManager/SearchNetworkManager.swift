@@ -8,6 +8,28 @@
 import Foundation
 
 class SearchNetworkManager {
+    
+    func fetchAlbums(scheme: String,
+                     host: String,
+                     path: String,
+                     term: String,
+                     entity: String,
+                     limit: Int,
+                     completion: @escaping(Result<SearchAlbumModel, SearchNetworkError>) -> Void) {
+        let url = buildURL(scheme: scheme, host: host, path: path, term: term, entity: entity, limit: limit)
+        getData(type: SearchAlbumModel.self, url, complition: completion)
+    }
+
+    func fetchSongs(scheme: String,
+                     host: String,
+                     path: String,
+                     term: String,
+                     entity: String,
+                     limit: Int,
+                     completion: @escaping(Result<SearchSongModel, SearchNetworkError>) -> Void) {
+        let url = buildURL(scheme: scheme, host: host, path: path, term: term, entity: entity, limit: limit)
+        getData(type: SearchSongModel.self, url, complition: completion)
+    }
 
     func buildURL(scheme: String, host: String, path: String, term: String, entity: String, limit: Int) -> URL? {
         var components = URLComponents()
