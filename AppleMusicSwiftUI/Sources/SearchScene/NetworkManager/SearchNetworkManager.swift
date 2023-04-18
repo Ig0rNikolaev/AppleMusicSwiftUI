@@ -21,28 +21,28 @@ class SearchNetworkManager {
     }
 
     func fetchSongs(scheme: String,
-                     host: String,
-                     path: String,
-                     term: String,
-                     entity: String,
-                     limit: Int,
-                     completion: @escaping(Result<SearchSongModel, SearchNetworkError>) -> Void) {
+                    host: String,
+                    path: String,
+                    term: String,
+                    entity: String,
+                    limit: Int,
+                    completion: @escaping(Result<SearchSongModel, SearchNetworkError>) -> Void) {
         let url = buildURL(scheme: scheme, host: host, path: path, term: term, entity: entity, limit: limit)
         getData(type: SearchSongModel.self, url, complition: completion)
     }
 
     func buildURL(scheme: String, host: String, path: String, term: String, entity: String, limit: Int) -> URL? {
-        var components = URLComponents()
-        components.scheme = scheme
-        components.host = host
-        components.path = path
-        components.queryItems = [
-            URLQueryItem(name: "term", value: term),
-            URLQueryItem(name: "entity", value: entity),
-            URLQueryItem(name: "limit", value: String(limit))
-        ]
-        return components.url
-    }
+            var components = URLComponents()
+            components.scheme = scheme
+            components.host = host
+            components.path = path
+            components.queryItems = [
+                URLQueryItem(name: "term", value: term),
+                URLQueryItem(name: "entity", value: entity),
+                URLQueryItem(name: "limit", value: String(limit))
+            ]
+            return components.url
+        }
 
     func getData<T: Decodable>(type: T.Type, _ url: URL?, complition: @escaping (Result<T, SearchNetworkError>) -> Void) {
         guard let url = url else {
