@@ -11,13 +11,34 @@ struct SearchViewAlbum: View {
     @ObservedObject var viewModel: SearchAlbum
     
     var body: some View {
-        NavigationView {
-            
-            List(viewModel.albums) { album in
-                Text(album.collectionName)
+        List {
+            ForEach(viewModel.albums.prefix(3)) { name in
+                HStack {
+                    Image(systemName: "magnifyingglass")
+                    Text(name.collectionName)
+                }
             }
-            .listStyle(.plain)
+            
+            ForEach(viewModel.albums) { album in
+                HStack(spacing: 20) {
+                    AsyncImage(url: URL(string: album.artworkUrl60))
+                        .cornerRadius(5)
+                        .shadow(radius: 5)
+                    VStack(alignment: .leading) {
+                        Text(album.collectionName)
+                        HStack {
+                            Text(album.collectionType)
+                            Text("·")
+                            Text(album.artistName)
+                            Spacer()
+                        }
+                        .foregroundColor(.secondary)
+                    }
+                    .lineLimit(1)
+                }
+            }
         }
+        .listStyle(.plain)
     }
 }
 

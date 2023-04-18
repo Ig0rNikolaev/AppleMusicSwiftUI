@@ -12,13 +12,34 @@ struct SearchViewSong: View {
     @ObservedObject var viewModel: SearchSong
     
     var body: some View {
-        NavigationView {
-            
-            List(viewModel.songs) { song in
-                Text(song.collectionName)
+        List {
+            ForEach(viewModel.songs.prefix(3)) { name in
+                HStack {
+                    Image(systemName: "magnifyingglass")
+                    Text(name.collectionName)
+                }
             }
-            .listStyle(.plain)
+
+            ForEach(viewModel.songs) { song in
+                HStack(spacing: 20) {
+                    AsyncImage(url: URL(string: song.artworkUrl60))
+                        .cornerRadius(5)
+                        .shadow(radius: 5)
+                    VStack(alignment: .leading) {
+                        Text(song.collectionName)
+                        HStack {
+                            Text(song.kind)
+                            Text("·")
+                            Text(song.artistName)
+                            Spacer()
+                        }
+                        .foregroundColor(.secondary)
+                    }
+                    .lineLimit(1)
+                }
+            }
         }
+        .listStyle(.plain)
     }
 }
 

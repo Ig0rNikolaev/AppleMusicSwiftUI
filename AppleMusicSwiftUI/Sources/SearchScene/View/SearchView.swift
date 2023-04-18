@@ -12,7 +12,11 @@ struct SearchView: View {
     @State var searchModel = SearchModel.appleMusic
     @StateObject var albumList = SearchAlbum()
     @StateObject var songList = SearchSong()
-    
+
+    var shuffledArray: [Any] {
+          return [albumList, songList].shuffled()
+      }
+
     var body: some View {
         NavigationView {
             VStack{
@@ -31,6 +35,7 @@ struct SearchView: View {
                         .onAppear {
                             albumList.search = search
                         }
+
                 case .yourMedia:
                     SearchViewSong(viewModel: songList)
                         .onAppear {
