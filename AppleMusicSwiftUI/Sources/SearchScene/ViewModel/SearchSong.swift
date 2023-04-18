@@ -1,16 +1,16 @@
 //
-//  SearchAlbumManager.swift
+//  SearchSong.swift
 //  AppleMusicSwiftUI
 //
-//  Created by Игорь Николаев on 14.04.2023.
+//  Created by Игорь Николаев on 18.04.2023.
 //
 
 import Foundation
 import Combine
 
-class SearchAlbum: ObservableObject {
+class SearchSong: ObservableObject {
     @Published var search: String = ""
-    @Published var albums = [Album]()
+    @Published var songs = [Song]()
     var subscription = Set<AnyCancellable>()
     let networkManager = SearchNetworkManager()
 
@@ -18,25 +18,25 @@ class SearchAlbum: ObservableObject {
         $search
             .dropFirst()
             .sink { [weak self] term in
-                self?.albums = []
-                self?.searchAlbum(term)
+                self?.songs = []
+                self?.searchSong(term)
             }.store(in: &subscription)
     }
 
-    func searchAlbum(_ search: String) {
+    func searchSong(_ search: String) {
         guard !search.isEmpty else { return }
 
-        networkManager.fetchAlbums(scheme: "https",
+        networkManager.fetchSongs(scheme: "https",
                                    host: "itunes.apple.com",
                                    path: "/search",
                                    term: search,
-                                   entity: "album",
+                                   entity: "song",
                                    limit: 10) { [weak self] result in
             DispatchQueue.main.async {
                 switch result {
                 case .success(let results):
-                    for album in results.results {
-                        self?.albums.append(album)
+                    for song in results.results {
+                        self?.songs.append(song)
                     }
                 case .failure(let error):
                     print(error.localizedDescription)
@@ -45,3 +45,4 @@ class SearchAlbum: ObservableObject {
         }
     }
 }
+

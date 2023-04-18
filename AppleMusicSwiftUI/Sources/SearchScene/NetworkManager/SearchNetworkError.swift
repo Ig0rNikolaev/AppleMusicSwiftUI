@@ -8,7 +8,6 @@
 import Foundation
 
 enum SearchNetworkError: Error, CustomStringConvertible {
-
     case errorURL
     case urlSession(URLError?)
     case errorResponse(Int)
@@ -16,7 +15,6 @@ enum SearchNetworkError: Error, CustomStringConvertible {
     case unknown
 
     var description: String {
-
         switch self {
         case .errorURL:
             return "Ошибка адреса URL"
