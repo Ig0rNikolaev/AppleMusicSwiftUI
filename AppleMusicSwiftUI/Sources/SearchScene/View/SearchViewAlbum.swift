@@ -9,13 +9,17 @@ import SwiftUI
 
 struct SearchViewAlbum: View {
     @ObservedObject var viewModel: SearchAlbum
+    @Binding var search: String
     
     var body: some View {
         List {
-            ForEach(viewModel.albums.prefix(3)) { name in
+            ForEach(viewModel.albums.prefix(3)) { album in
                 HStack {
                     Image(systemName: "magnifyingglass")
-                    Text(name.collectionName)
+                    Text(album.collectionName)
+                        .onTapGesture {
+                            self.search = album.collectionName
+                        }
                 }
             }
             
@@ -43,7 +47,9 @@ struct SearchViewAlbum: View {
 }
 
 struct SearchViewAlbum_Previews: PreviewProvider {
+    @State static var searchText = ""
+
     static var previews: some View {
-        SearchViewAlbum(viewModel: SearchAlbum())
+        SearchViewAlbum(viewModel: SearchAlbum(), search: $searchText)
     }
 }
