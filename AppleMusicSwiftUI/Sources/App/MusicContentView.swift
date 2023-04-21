@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct MusicContentView: View {
+    @State private var sheet: Bool = false
+    @Namespace private var animation
 
     var body: some View {
         ZStack(alignment: .bottom) {
@@ -19,13 +21,37 @@ struct MusicContentView: View {
                 createTabWay(modul: SearchView(), name: "Поиск", icon: "magnifyingglass")
             }
             .accentColor(.red)
-            .onAppear() {
-                UITabBar.appearance().backgroundColor = .systemGray6
+            .safeAreaInset(edge: .bottom) {
+                CustomModalSheet()
             }
-            MusicPlayer()
-                .offset(y: -109)
-                .padding(.bottom, -90)
+            .overlay {
+                if sheet {
+                    BottomSheet(sheet: $sheet, animation: animation)
+                }
+            }
         }
+    }
+
+    func CustomModalSheet() -> some View {
+        ZStack {
+            if sheet {
+                Rectangle()
+                    .fill(.clear)
+            } else {
+                Rectangle()
+                    .fill(.ultraThickMaterial)
+                    .overlay {
+                        MusicPlayer(sheet: $sheet, animation: animation)
+                    }
+                    .matchedGeometryEffect(id: "VIEW", in: animation)
+            }
+        }
+        .frame(height: 70)
+        .offset(y: -49)
+        .overlay(alignment: .bottom, content: {
+            Divider()
+                .offset(y: -50)
+        })
     }
 
     func createTabWay<T: View>(modul: T, name: String, icon: String) -> some View {

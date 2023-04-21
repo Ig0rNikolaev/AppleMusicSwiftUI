@@ -10,13 +10,17 @@ import SwiftUI
 
 struct SearchViewSong: View {
     @ObservedObject var viewModel: SearchSong
+    @Binding var search: String
     
     var body: some View {
         List {
-            ForEach(viewModel.songs.prefix(3)) { name in
+            ForEach(viewModel.songs.prefix(3)) { song in
                 HStack {
                     Image(systemName: "magnifyingglass")
-                    Text(name.collectionName)
+                    Text(song.trackName)
+                        .onTapGesture {
+                            self.search = song.trackName
+                        }
                 }
             }
 
@@ -26,7 +30,7 @@ struct SearchViewSong: View {
                         .cornerRadius(5)
                         .shadow(radius: 5)
                     VStack(alignment: .leading) {
-                        Text(song.collectionName)
+                        Text(song.trackName)
                         HStack {
                             Text(song.kind)
                             Text("·")
@@ -44,7 +48,9 @@ struct SearchViewSong: View {
 }
 
 struct SearchSongView_Previews: PreviewProvider {
+    @State static var searchText = ""
+
     static var previews: some View {
-        SearchViewSong(viewModel: SearchSong())
+        SearchViewSong(viewModel: SearchSong(), search: $searchText)
     }
 }
