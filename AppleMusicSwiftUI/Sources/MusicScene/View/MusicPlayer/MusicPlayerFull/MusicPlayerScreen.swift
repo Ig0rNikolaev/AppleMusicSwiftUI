@@ -11,11 +11,13 @@ import AVKit
 struct MusicPlayerScreen: View {
     @State private var isPlaying = false
     @State var audioPlayer: AVAudioPlayer?
+    @State private var currentTime: TimeInterval = 0
+    @State private var duration: TimeInterval = 0
+    @State private var volume: Float = 0.0
 
     var body: some View {
-        GeometryReader {
-            let size = $0.size
-            let spacing = size.height * 0.04
+        GeometryReader { geometry in
+            let spacing = geometry.size.height * 0.04
 
             VStack(spacing: spacing) {
 
@@ -47,16 +49,12 @@ struct MusicPlayerScreen: View {
                 }
 
                 VStack(spacing: 10) {
-                    Capsule()
-                        .fill(.ultraThinMaterial)
-                        .environment (\.colorScheme, .light)
-                        .frame(height: 7)
-                        .padding(.top, spacing)
-
+                    Slider(value: $currentTime, in: 0...duration)
+                        .accentColor(.secondary)
                     HStack {
-                        Text("0:00")
+                        Text(formatTimeInterval(currentTime))
                         Spacer()
-                        Text("-0:32")
+                        Text(formatTimeInterval(duration - currentTime))
                     }
                     .foregroundColor(.secondary)
                     .font(.callout)
@@ -66,7 +64,10 @@ struct MusicPlayerScreen: View {
                 Spacer()
 
                 HStack(alignment: .center, spacing: 60) {
-                    Button(action: {}) {
+                    Button(action: {
+                        audioPlayer?.play()
+                        isPlaying = true
+                    }) {
                         Image(systemName: "backward.fill")
                             .font(.system(size: 35))
                     }
@@ -83,7 +84,11 @@ struct MusicPlayerScreen: View {
                             .font(.system(size: 55))
                     }
 
-                    Button(action: {}) {
+                    Button(action: {
+                        audioPlayer?.currentTime = duration
+                        audioPlayer?.pause()
+                        isPlaying = false
+                    }) {
                         Image(systemName: "forward.fill")
                             .font(.system(size: 35))
                     }
@@ -93,6 +98,7 @@ struct MusicPlayerScreen: View {
                     do {
                         let sound = Bundle.main.path(forResource: "song", ofType: "mp3")
                         self.audioPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: sound ?? " "))
+                        self.duration = audioPlayer?.duration ?? 0
                     } catch {
                         print("Error initializing AVAudioPlayer: \(error.localizedDescription)")
                     }
@@ -105,10 +111,8 @@ struct MusicPlayerScreen: View {
                         Image(systemName: "speaker.fill")
                             .foregroundColor(.secondary)
 
-                        Capsule()
-                            .fill(.ultraThinMaterial)
-                            .environment (\.colorScheme, .light)
-                            .frame(height: 7)
+                        Slider(value: $volume)
+                            .accentColor(.secondary)
 
                         Image(systemName: "speaker.wave.3.fill")
                             .foregroundColor(.secondary)
@@ -133,8 +137,14 @@ struct MusicPlayerScreen: View {
             }
         }
     }
-}
 
+    func formatTimeInterval(_ interval: TimeInterval) -> String {
+        let formatter = DateComponentsFormatter()
+        formatter.allowedUnits = [.minute, .second]
+        formatter.zeroFormattingBehavior = .pad
+        return formatter.string(from: interval) ?? " "
+    }
+}
 
 struct MusicPlayerScreen_Previews: PreviewProvider {
     static var previews: some View {
