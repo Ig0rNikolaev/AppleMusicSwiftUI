@@ -27,16 +27,21 @@ struct SearchView: View {
 
                 switch searchModel {
                 case .appleMusic:
-                    SearchViewAlbum(viewModel: albumList, search: $search)
-                        .onAppear {
-                            albumList.search = search
-                        }
+                    if search.isEmpty {
+                        SearchCategory()
+                            .padding(.top)
+                    } else {
+                        SearchViewAlbum(viewModel: albumList, search: $search)
+                            .onAppear {
+                                albumList.search = search
+                            }
+                    }
 
                 case .yourMedia:
-                    SearchViewSong(viewModel: songList, search: $search)
-                        .onAppear {
-                            songList.search = search
-                        }
+                        SearchViewSong(viewModel: songList, search: $search)
+                            .onAppear {
+                                songList.search = search
+                    }
                 }
             }
             .navigationTitle("Поиск")
