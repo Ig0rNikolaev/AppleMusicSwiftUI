@@ -18,8 +18,10 @@ struct SearchCategoryContent: View {
                     GenreList(searchManager: searchManager)
                 }
             }
-            .navigationTitle("Главное")
+            .padding(.top)
+            .padding(.bottom, 80)
         }
+        .navigationTitle("Главное")
     }
 }
 

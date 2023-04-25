@@ -8,12 +8,11 @@
 import SwiftUI
 
 struct SearchCategory: View {
+    let searchManager = SearchManager()
     let columns = [GridItem(.flexible(), spacing: 10),
                    GridItem(.flexible())
     ]
-    
-    let searchManager = SearchManager()
-    
+
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
             VStack(alignment: .leading) {
@@ -23,19 +22,38 @@ struct SearchCategory: View {
                     .padding(.horizontal)
                 LazyVGrid(columns: columns, spacing: 10) {
                     ForEach(searchManager.searchCategory) { category in
-                        Image(category.icon)
-                            .resizable()
-                            .frame(height: 120)
-                            .cornerRadius(10)
-                            .colorMultiply(category.сolor.opacity(0.9))
-                            .overlay(
-                                Text(category.description)
-                                    .foregroundColor(.white)
-                                    .padding(10)
-                                    .font(.system(size: 15))
-                                    .bold(),
-                                alignment: .bottomLeading
-                            )
+                        
+                        if category.description == "Главное" {
+                            NavigationLink(destination: SearchCategoryContent()) {
+                                Image(category.icon)
+                                    .resizable()
+                                    .frame(height: 120)
+                                    .cornerRadius(10)
+                                    .colorMultiply(category.сolor.opacity(0.9))
+                                    .overlay(
+                                        Text(category.description)
+                                            .foregroundColor(.white)
+                                            .padding(10)
+                                            .font(.system(size: 15))
+                                            .bold(),
+                                        alignment: .bottomLeading
+                                    )
+                            }
+                        } else {
+                            Image(category.icon)
+                                .resizable()
+                                .frame(height: 120)
+                                .cornerRadius(10)
+                                .colorMultiply(category.сolor.opacity(0.9))
+                                .overlay(
+                                    Text(category.description)
+                                        .foregroundColor(.white)
+                                        .padding(10)
+                                        .font(.system(size: 15))
+                                        .bold(),
+                                    alignment: .bottomLeading
+                                )
+                        }
                     }
                 }
                 .padding(.horizontal)

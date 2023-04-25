@@ -9,7 +9,6 @@ import Foundation
 import UIKit
 
 class UIkitSearchController: UIViewController {
-
     let model = SearchManager()
 
     //: MARK: - UI Elements

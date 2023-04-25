@@ -8,22 +8,21 @@
 import Foundation
 
 class SearchManager: ObservableObject {
-
     @Published var modelSearchDetail: [SearchModelDetail] = [
         SearchModelDetail(description: "Главные вехи рэпа на русском: от классики 90-х до новой школы.",
-                            icon: "hiphopSearch",
-                            descriptionHeader: "Хип-Хоп на русском: главное",
-                            descriptionGenre: "Apple Music Хип-Хоп"),
+                          icon: "hiphopSearch",
+                          descriptionHeader: "Хип-Хоп на русском: главное",
+                          descriptionGenre: "Apple Music Хип-Хоп"),
 
         SearchModelDetail(description: "Неистовые, мощные и новаторские треки от главных героев жанра.",
-                            icon: "rockSearch",
-                            descriptionHeader: "Ностальгия по ню-металу",
-                            descriptionGenre: "Apple Music Хард-рок"),
+                          icon: "rockSearch",
+                          descriptionHeader: "Ностальгия по ню-металу",
+                          descriptionGenre: "Apple Music Хард-рок"),
 
         SearchModelDetail(description: "Хиты прошлого которые никогда не наскучат.",
-                            icon: "goldSearch",
-                            descriptionHeader: "Золотой запас",
-                            descriptionGenre: "Apple Music Поп"),
+                          icon: "goldSearch",
+                          descriptionHeader: "Золотой запас",
+                          descriptionGenre: "Apple Music Поп"),
     ]
 
     @Published var modelDetailSections: [SearchDetailSections] = [

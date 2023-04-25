@@ -1,5 +1,5 @@
 //
-//  UIkitSearchCategory.swift
+//  UIKitSearchView.swift
 //  AppleMusicSwiftUI
 //
 //  Created by Игорь Николаев on 25.04.2023.

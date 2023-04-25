@@ -65,7 +65,7 @@ struct SearchModelCategory: Identifiable {
         self.icon = ""
         self.сolor = .clear
     }
-
+    
     init(description: String, icon: String, color: Color) {
         self.description = description
         self.icon = icon

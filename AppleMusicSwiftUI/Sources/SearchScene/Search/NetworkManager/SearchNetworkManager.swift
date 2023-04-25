@@ -32,17 +32,17 @@ class SearchNetworkManager {
     }
 
     func buildURL(scheme: String, host: String, path: String, term: String, entity: String, limit: Int) -> URL? {
-            var components = URLComponents()
-            components.scheme = scheme
-            components.host = host
-            components.path = path
-            components.queryItems = [
-                URLQueryItem(name: "term", value: term),
-                URLQueryItem(name: "entity", value: entity),
-                URLQueryItem(name: "limit", value: String(limit))
-            ]
-            return components.url
-        }
+        var components = URLComponents()
+        components.scheme = scheme
+        components.host = host
+        components.path = path
+        components.queryItems = [
+            URLQueryItem(name: "term", value: term),
+            URLQueryItem(name: "entity", value: entity),
+            URLQueryItem(name: "limit", value: String(limit))
+        ]
+        return components.url
+    }
 
     func getData<T: Decodable>(type: T.Type, _ url: URL?, complition: @escaping (Result<T, SearchNetworkError>) -> Void) {
         guard let url = url else {

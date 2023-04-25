@@ -23,7 +23,6 @@ struct SearchViewSong: View {
                         }
                 }
             }
-
             ForEach(viewModel.songs) { song in
                 HStack(spacing: 20) {
                     AsyncImage(url: URL(string: song.artworkUrl60))

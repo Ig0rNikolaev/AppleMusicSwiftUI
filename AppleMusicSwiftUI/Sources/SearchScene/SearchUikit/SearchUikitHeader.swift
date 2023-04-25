@@ -9,7 +9,6 @@ import SwiftUI
 import UIKit
 
 class SearchUikitHeader: UICollectionReusableView {
-
     static let identifier = "SearchUikitHeader"
 
     //: MARK: - UI Elements

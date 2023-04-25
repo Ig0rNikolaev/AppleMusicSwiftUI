@@ -26,7 +26,7 @@
 		DB74C12729D9BA3900F9C99B /* MusicPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB74C12629D9BA3900F9C99B /* MusicPlayer.swift */; };
 		DB7CB4E929E9D2D10008FCF5 /* SearchNetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7CB4E829E9D2D10008FCF5 /* SearchNetworkError.swift */; };
 		DB7CB4EC29E9F0710008FCF5 /* SearchNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7CB4EB29E9F0710008FCF5 /* SearchNetworkManager.swift */; };
-		DBA1D25129F7DE1400F05CF9 /* UIkitSearchCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA1D25029F7DE1400F05CF9 /* UIkitSearchCategory.swift */; };
+		DBA1D25129F7DE1400F05CF9 /* UIKitSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA1D25029F7DE1400F05CF9 /* UIKitSearchView.swift */; };
 		DBA1D25329F7DEB200F05CF9 /* UIkitSearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA1D25229F7DEB200F05CF9 /* UIkitSearchCell.swift */; };
 		DBA1D25729F8622A00F05CF9 /* SearchUikitHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA1D25629F8622A00F05CF9 /* SearchUikitHeader.swift */; };
 		DBA6533E29DAEF03005D57F1 /* MusicPlayerImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA6533D29DAEF03005D57F1 /* MusicPlayerImage.swift */; };
@@ -77,7 +77,7 @@
 		DB74C12629D9BA3900F9C99B /* MusicPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayer.swift; sourceTree = "<group>"; };
 		DB7CB4E829E9D2D10008FCF5 /* SearchNetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchNetworkError.swift; sourceTree = "<group>"; };
 		DB7CB4EB29E9F0710008FCF5 /* SearchNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchNetworkManager.swift; sourceTree = "<group>"; };
-		DBA1D25029F7DE1400F05CF9 /* UIkitSearchCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIkitSearchCategory.swift; sourceTree = "<group>"; };
+		DBA1D25029F7DE1400F05CF9 /* UIKitSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitSearchView.swift; sourceTree = "<group>"; };
 		DBA1D25229F7DEB200F05CF9 /* UIkitSearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIkitSearchCell.swift; sourceTree = "<group>"; };
 		DBA1D25629F8622A00F05CF9 /* SearchUikitHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUikitHeader.swift; sourceTree = "<group>"; };
 		DBA6533D29DAEF03005D57F1 /* MusicPlayerImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayerImage.swift; sourceTree = "<group>"; };
@@ -202,7 +202,7 @@
 		DB2BE9FD29F2B18900375B4C /* SearchUikit */ = {
 			isa = PBXGroup;
 			children = (
-				DBA1D25029F7DE1400F05CF9 /* UIkitSearchCategory.swift */,
+				DBA1D25029F7DE1400F05CF9 /* UIKitSearchView.swift */,
 				DB2BE9FE29F2B1F800375B4C /* UIkitSearchController.swift */,
 				DBA1D25229F7DEB200F05CF9 /* UIkitSearchCell.swift */,
 				DBA1D25629F8622A00F05CF9 /* SearchUikitHeader.swift */,
@@ -539,7 +539,7 @@
 				DB2BE9FA29F1CEBA00375B4C /* View+Extension.swift in Sources */,
 				DB69424429EEAFA90041BEDF /* SearchView.swift in Sources */,
 				DBA6534129DB017C005D57F1 /* MusicManagerCategory.swift in Sources */,
-				DBA1D25129F7DE1400F05CF9 /* UIkitSearchCategory.swift in Sources */,
+				DBA1D25129F7DE1400F05CF9 /* UIKitSearchView.swift in Sources */,
 				DBC5885F29F6C89E003E0E96 /* GenreList.swift in Sources */,
 				DBC3C90C29DDA4E8007ACD36 /* RadioCategorys.swift in Sources */,
 				DB2BE9FC29F1D07A00375B4C /* MusicPlayerScreen.swift in Sources */,

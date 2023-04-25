@@ -9,7 +9,6 @@ import SwiftUI
 import UIKit
 
 class UikitSearchCell: UICollectionViewCell {
-
     static let identifier = "Cell"
 
     let imagePhoto: UIImageView = {
@@ -59,5 +58,4 @@ class UikitSearchCell: UICollectionViewCell {
             titleImage.leftAnchor.constraint(equalTo: imagePhoto.leftAnchor, constant: 10)
         ])
     }
-
 }
