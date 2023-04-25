@@ -11,9 +11,9 @@ struct SearchCategory: View {
     let columns = [GridItem(.flexible(), spacing: 10),
                    GridItem(.flexible())
     ]
-
+    
     let searchManager = SearchManager()
-
+    
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
             VStack(alignment: .leading) {
@@ -41,9 +41,9 @@ struct SearchCategory: View {
                 .padding(.horizontal)
             }
         }
+        .padding(.bottom, 80)
     }
 }
-
 
 struct SearchCategoryView_Previews: PreviewProvider {
     static var previews: some View {

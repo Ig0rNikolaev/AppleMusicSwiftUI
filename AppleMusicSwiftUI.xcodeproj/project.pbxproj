@@ -14,7 +14,7 @@
 		DB2BE9F729F1C83900375B4C /* MusicPlayerFull.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2BE9F629F1C83900375B4C /* MusicPlayerFull.swift */; };
 		DB2BE9FA29F1CEBA00375B4C /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2BE9F929F1CEBA00375B4C /* View+Extension.swift */; };
 		DB2BE9FC29F1D07A00375B4C /* MusicPlayerScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2BE9FB29F1D07A00375B4C /* MusicPlayerScreen.swift */; };
-		DB2BE9FF29F2B1F800375B4C /* SearchCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2BE9FE29F2B1F800375B4C /* SearchCollectionView.swift */; };
+		DB2BE9FF29F2B1F800375B4C /* UIkitSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2BE9FE29F2B1F800375B4C /* UIkitSearchController.swift */; };
 		DB2C291B29E2FBF000B70B58 /* song.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DB2C291A29E2FBF000B70B58 /* song.mp3 */; };
 		DB32968829D84D78003A0D51 /* MusicContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB32968729D84D78003A0D51 /* MusicContentView.swift */; };
 		DB69423B29EEA36F0041BEDF /* SearchSong.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB69423A29EEA36F0041BEDF /* SearchSong.swift */; };
@@ -26,6 +26,9 @@
 		DB74C12729D9BA3900F9C99B /* MusicPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB74C12629D9BA3900F9C99B /* MusicPlayer.swift */; };
 		DB7CB4E929E9D2D10008FCF5 /* SearchNetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7CB4E829E9D2D10008FCF5 /* SearchNetworkError.swift */; };
 		DB7CB4EC29E9F0710008FCF5 /* SearchNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7CB4EB29E9F0710008FCF5 /* SearchNetworkManager.swift */; };
+		DBA1D25129F7DE1400F05CF9 /* UIkitSearchCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA1D25029F7DE1400F05CF9 /* UIkitSearchCategory.swift */; };
+		DBA1D25329F7DEB200F05CF9 /* UIkitSearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA1D25229F7DEB200F05CF9 /* UIkitSearchCell.swift */; };
+		DBA1D25729F8622A00F05CF9 /* SearchUikitHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA1D25629F8622A00F05CF9 /* SearchUikitHeader.swift */; };
 		DBA6533E29DAEF03005D57F1 /* MusicPlayerImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA6533D29DAEF03005D57F1 /* MusicPlayerImage.swift */; };
 		DBA6534129DB017C005D57F1 /* MusicManagerCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA6534029DB017C005D57F1 /* MusicManagerCategory.swift */; };
 		DBA9F44229E95C540038C2B5 /* SearchAlbum.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA9F44129E95C540038C2B5 /* SearchAlbum.swift */; };
@@ -62,7 +65,7 @@
 		DB2BE9F629F1C83900375B4C /* MusicPlayerFull.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayerFull.swift; sourceTree = "<group>"; };
 		DB2BE9F929F1CEBA00375B4C /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
 		DB2BE9FB29F1D07A00375B4C /* MusicPlayerScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayerScreen.swift; sourceTree = "<group>"; };
-		DB2BE9FE29F2B1F800375B4C /* SearchCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCollectionView.swift; sourceTree = "<group>"; };
+		DB2BE9FE29F2B1F800375B4C /* UIkitSearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIkitSearchController.swift; sourceTree = "<group>"; };
 		DB2C291A29E2FBF000B70B58 /* song.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = song.mp3; sourceTree = "<group>"; };
 		DB32968729D84D78003A0D51 /* MusicContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicContentView.swift; sourceTree = "<group>"; };
 		DB69423A29EEA36F0041BEDF /* SearchSong.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchSong.swift; sourceTree = "<group>"; };
@@ -74,6 +77,9 @@
 		DB74C12629D9BA3900F9C99B /* MusicPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayer.swift; sourceTree = "<group>"; };
 		DB7CB4E829E9D2D10008FCF5 /* SearchNetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchNetworkError.swift; sourceTree = "<group>"; };
 		DB7CB4EB29E9F0710008FCF5 /* SearchNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchNetworkManager.swift; sourceTree = "<group>"; };
+		DBA1D25029F7DE1400F05CF9 /* UIkitSearchCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIkitSearchCategory.swift; sourceTree = "<group>"; };
+		DBA1D25229F7DEB200F05CF9 /* UIkitSearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIkitSearchCell.swift; sourceTree = "<group>"; };
+		DBA1D25629F8622A00F05CF9 /* SearchUikitHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUikitHeader.swift; sourceTree = "<group>"; };
 		DBA6533D29DAEF03005D57F1 /* MusicPlayerImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayerImage.swift; sourceTree = "<group>"; };
 		DBA6534029DB017C005D57F1 /* MusicManagerCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicManagerCategory.swift; sourceTree = "<group>"; };
 		DBA9F44129E95C540038C2B5 /* SearchAlbum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAlbum.swift; sourceTree = "<group>"; };
@@ -196,7 +202,10 @@
 		DB2BE9FD29F2B18900375B4C /* SearchUikit */ = {
 			isa = PBXGroup;
 			children = (
-				DB2BE9FE29F2B1F800375B4C /* SearchCollectionView.swift */,
+				DBA1D25029F7DE1400F05CF9 /* UIkitSearchCategory.swift */,
+				DB2BE9FE29F2B1F800375B4C /* UIkitSearchController.swift */,
+				DBA1D25229F7DEB200F05CF9 /* UIkitSearchCell.swift */,
+				DBA1D25629F8622A00F05CF9 /* SearchUikitHeader.swift */,
 			);
 			path = SearchUikit;
 			sourceTree = "<group>";
@@ -530,15 +539,18 @@
 				DB2BE9FA29F1CEBA00375B4C /* View+Extension.swift in Sources */,
 				DB69424429EEAFA90041BEDF /* SearchView.swift in Sources */,
 				DBA6534129DB017C005D57F1 /* MusicManagerCategory.swift in Sources */,
+				DBA1D25129F7DE1400F05CF9 /* UIkitSearchCategory.swift in Sources */,
 				DBC5885F29F6C89E003E0E96 /* GenreList.swift in Sources */,
 				DBC3C90C29DDA4E8007ACD36 /* RadioCategorys.swift in Sources */,
 				DB2BE9FC29F1D07A00375B4C /* MusicPlayerScreen.swift in Sources */,
 				DB2BE9F729F1C83900375B4C /* MusicPlayerFull.swift in Sources */,
 				DBC3C91629DDE4E9007ACD36 /* RadioStationDescription.swift in Sources */,
 				DBC3C91429DDE4A1007ACD36 /* RadioImage.swift in Sources */,
-				DB2BE9FF29F2B1F800375B4C /* SearchCollectionView.swift in Sources */,
+				DB2BE9FF29F2B1F800375B4C /* UIkitSearchController.swift in Sources */,
 				DBC5885729F6AF8F003E0E96 /* SearchViewModels.swift in Sources */,
+				DBA1D25329F7DEB200F05CF9 /* UIkitSearchCell.swift in Sources */,
 				DBC3C91A29DEE2BC007ACD36 /* RadioModel.swift in Sources */,
+				DBA1D25729F8622A00F05CF9 /* SearchUikitHeader.swift in Sources */,
 				DBC3C90E29DDB0D0007ACD36 /* RadioCategoryHeader.swift in Sources */,
 				DB7CB4E929E9D2D10008FCF5 /* SearchNetworkError.swift in Sources */,
 				DBC3C91829DDE52E007ACD36 /* RadioStationCell.swift in Sources */,

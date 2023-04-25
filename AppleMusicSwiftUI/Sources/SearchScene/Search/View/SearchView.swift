@@ -35,12 +35,19 @@ struct SearchView: View {
                             .onAppear {
                                 albumList.search = search
                             }
+                            .padding(.bottom, 80)
                     }
 
                 case .yourMedia:
+                    if search.isEmpty {
+                        UIKitSearchView()
+                            .padding(.top)
+                    } else {
                         SearchViewSong(viewModel: songList, search: $search)
                             .onAppear {
                                 songList.search = search
+                            }
+                            .padding(.bottom, 80)
                     }
                 }
             }
