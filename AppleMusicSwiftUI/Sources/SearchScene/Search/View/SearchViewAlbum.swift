@@ -22,7 +22,6 @@ struct SearchViewAlbum: View {
                         }
                 }
             }
-            
             ForEach(viewModel.albums) { album in
                 HStack(spacing: 20) {
                     AsyncImage(url: URL(string: album.artworkUrl60))

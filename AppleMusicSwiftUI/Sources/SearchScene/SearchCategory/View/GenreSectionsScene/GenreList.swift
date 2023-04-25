@@ -9,7 +9,6 @@ import SwiftUI
 
 struct GenreList: View {
     let rows = [GridItem()]
-
     @State var searchManager = SearchManager()
 
     var body: some View {
